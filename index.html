@@ -87,7 +87,6 @@ function init() {
 	var comp=AdobeAn.getComposition("415CC1C8473DF04CB946030AE5FC0179");
 	var lib=comp.getLibrary();
 	createjs.MotionGuidePlugin.install();
-	images = images||{};
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
